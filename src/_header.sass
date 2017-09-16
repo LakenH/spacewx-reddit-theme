@@ -42,7 +42,7 @@
       li
         border-bottom: 5px solid $color2
         &:hover, &.selected
-          border-bottom: 5px solid $color1
+          border-bottom: 5px solid $accent-text
           a
             border: none
         a
@@ -78,6 +78,20 @@
       height: 42px
       font-size: 0
       line-height: 0
+  #header-bottom-right
+    background: none
+    padding-bottom: 23px
+    padding-right: 10px
+    span.user a
+      color: #FFF
+      font-weight: bold
+      font-size: 12px
+    span, span a
+      color: $accent-text
+      font-size: 12px
+    li a, .logout a
+      color: #FFF
+      font-weight: 600
 // ACTIVE STORMS
 .usertext-body .md h5
   position: absolute
