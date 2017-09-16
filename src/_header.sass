@@ -1,0 +1,129 @@
+#header
+  height: 200px
+  background-image: url(%%backgroundimage%%)
+  background-size: 100%
+  -webkit-animation: animateBackground 80s ease infinite
+  -moz-animation: animateBackground 80s ease infinite
+  animation: animateBackground 80s ease infinite
+
+  #sr-header-area
+    background-color: $color2
+    .width-clip
+      // width: calc(100% - 350px)
+    .srdrop span
+      color: white
+    .sr-list li a
+      color: white
+  #header-bottom-left
+    width: 300px
+    height: 120px
+    background-color: $color1
+    display: flex
+    align-items: center
+    &::after
+      position: absolute
+      left: 300px
+      border-right: 120px solid transparent
+      border-bottom: 120px solid $color1
+      content: ""
+      width: 0
+      height: 0
+      top: 19px
+    .tabmenu
+      position: absolute
+      top: 143px
+      left: 0
+      height: 61px
+      width: 35%
+      margin: 0
+      margin-left: 10px
+      display: flex
+      align-items: center
+      li
+        border-bottom: 5px solid $color2
+        &:hover, &.selected
+          border-bottom: 5px solid $color1
+          a
+            border: none
+        a
+          background: none
+          color: $accent-text
+          font-weight: bold
+          font-size: 18px
+    #header-img-a
+      margin-left: 10px
+      &::after
+        position: absolute
+        top: 139px
+        left: 0
+        width: 100%
+        background-color: $color2
+        content: ""
+        height: 61px
+    .redditname
+      position: relative
+      a
+        color: transparent
+        font-size: 0
+        line-height: 0
+        &:after
+          content: ""
+          top: 0
+          left: 0
+          position: absolute
+          width: 200px
+          height: 42px
+          background-image: url(%%textlogo%%)
+      width: 200px
+      height: 42px
+      font-size: 0
+      line-height: 0
+// ACTIVE STORMS
+.usertext-body .md h5
+  position: absolute
+  top: 19px
+  left: 410px
+  height: 120px
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  flex-wrap: wrap
+  width: calc(100% - 420px)
+  z-index: 100
+  color: #FFF
+  font-size: 20px
+  text-shadow: -2px -2px 0 $color2, 2px -2px 0 $color2, -2px 2px 0 $color2, 2px 2px 0 $color2
+  margin: 0
+  > *:first-child
+    margin-left: 25px
+  em, strong, del
+    margin: 0 5px
+    a
+      background-color: $color1
+      color: #FFF
+      padding: 10px 10px 10px 30px
+      position: relative
+      font-size: 14px
+      text-decoration: none
+      font-style: normal
+      text-shadow: none
+      white-space: nowrap
+      &::before
+        position: absolute
+        left: 10px
+        top: 10px
+        content: ""
+        width: 20px
+        height: 20px
+        background-image: url(%%star%%)
+      &:hover
+        background-color: $color2
+
+@keyframes animateBackground
+  0%
+    background-position: 0px 0px
+  50%
+    background-position: 0px 100%
+  100%
+    background-position: 0px 0px
+
